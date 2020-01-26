@@ -16,8 +16,8 @@ public class Driver {
         drive = new Drivetrain();
 
         driveType = new SendableChooser<>();
-        //driveType.setDefaultOption("Arcade", arcade);
-        //driveType.addOption("Tank", tank);
+        driveType.setDefaultOption("Arcade", arcade);
+        driveType.addOption("Tank", tank);
         SmartDashboard.putData("Drive Type", driveType);
     }
 
