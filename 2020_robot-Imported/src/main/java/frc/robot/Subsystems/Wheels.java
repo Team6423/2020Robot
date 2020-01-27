@@ -18,13 +18,28 @@ public class Wheels {
     public void spinBigWheelFor(){
         largeWheel.set(ControlMode.PercentOutput, 0.1);
     }
+    
     public void spinBigWheelBac(){
         largeWheel.set(ControlMode.PercentOutput, -0.1);
     }
+    
+    public void stopBigWheel(){
+        largeWheel.stopMotor();
+    }
+    
     public void spinIntake(){
         intake.set(ControlMode.PercentOutput, 0.5);
-    } 
+    }
+    
+    public void stopIntake(){
+        intake.stopMotor();
+    }
+    
     public void spinShooter(){
         shooter.set(ControlMode.PercentOutput, 0.1);
     } 
+    
+    public void stopShooter(){
+        shooter.stopMotor();
+    }
 }
