@@ -24,7 +24,7 @@ public class Drivetrain {
     }
 
     public void arcadeDrive(double straight, double left, double right) { 
-        leftFront.set(ControlMode.PercentOutput, + left - right);
+        leftFront.set(ControlMode.PercentOutput, straight + left - right);
         rightFront.set(ControlMode.PercentOutput, -(straight - left + right)); 
     }
 
